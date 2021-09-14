@@ -1,13 +1,19 @@
 <%- include('./partials/head.ejs') %>
 <%- include('./partials/header.ejs') %>
 <main class="bg-light">
-  <section>
+  <!-- <section>
     <h1 class="primary"><%= titulo %></h1>
     <p class="primary-dark flex-item-full-row"><%= subtitulo %></p>
+  </section> -->
+
+  <section class="banner-img-sm bg-tertiary-dark">
+    <h1 class="light"><%= titulo %></h1>
+    <p class="primary flex-item-full-row"><%= subtitulo %></p>
   </section>
 
   <section id="usuarios" class="bg-tertiary-light">
     <h2 class="tertiary flex-item-full-row"><%= subtitulo %></h2>
+    <p class="tertiar-dark text-center text-bolder flex-item-full-row">Junte-se aos <%= usuarios.length %> já cadastrados</p>
     <%- include('./partials/usuarioCard.ejs') %>
   </section>
 </main>
